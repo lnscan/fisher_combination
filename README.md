@@ -2,6 +2,7 @@
 Calculate combined multiple P values to one P value using Fisher's combination
 
 Description  : Combine P values for using Fisher's combination, lines with no more than one non-NA value will be skipped.
+
 Usage        : python fisher_combination_pvalue.py <pvalue_file>
 
 Example      : python fisher_combination_pvalue.py pop1_pvalue.txt
