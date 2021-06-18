@@ -41,11 +41,11 @@ def cal_comb_pva(pva_items):
 	pva = 1 - chi2.cdf(z_score, (df+1)*2)
 	return pva
 
-popt   = sys.argv[1]
-popo  = popt + ".fisher.pvalue" 
+popi   = sys.argv[1]
+popo  = popi + ".fisher.pvalue" 
 
 popw  = open(popo, 'w')
-with open(popt, 'r') as popr:
+with open(popi, 'r') as popr:
 	for line in popr.readlines():
 		line = line.rstrip()
 		if re.match("chpos", line): ## the header line
